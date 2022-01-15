@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mídias em HTML5</title>
+  </head>
+  <body>
+    <h1>Imagem Dinâmica</h1>
+    <p>
+      Tente abrir esse site em vários dispositivos diferentes ou simplesmente
+      aumente e diminuia o tamanho do seu navegador.
+    </p>
+    <picture>
+      <!-- NUNCA FIQUE COM PREGUIÇA DE DAR AO USÚARIO A MELHOR EXPERIÊNCIA QUE ELE PODE TER EM SEU SITE. QUANDO UMA PESSOA ENTRA E LOGO SAI DO SEU SITE, AUTOMATICAMENTE O GOOGLE VAI ENTENDENDO QUE SEU SITE NÃO É RECOMENDÁVEL. -->
+      <!-- Usando a tag source media type você poderá mudar o tamanho mínimo para o tamanho máximo, deixando 50px a mais do que o tamanho da sua imagem. E não se esqueça de colocar png após a palavra image. -->
+      <!-- Assim, a imagem que você dispobinilizar poderá ser visualizada em qualquer tipo de navegador. -->
+      <!-- A ORDEM DO TAMANHO DAS IMAGENS É EXTREMAMENTE IMPORTATE. SEMPRE DA MENOR PARA A MAIOR, CASO CONTRÁRIO, UMA DAS IMAGENS NÃO IRÁ FUNCIONAR. -->
+      <source
+        media="(max-width: 750px)"
+        srcset="imagens/foto-p.png"
+        type="image/png"
+      />
+      <source
+        media="(max-width: 1050px)"
+        srcset="imagens/foto-m.png"
+        type="image/png"
+      />
+      <img src="Imagens/foto-g.png" alt="Imagem Flexível" />
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios no HTML5.</p>
+    <!-- Existem duas maneiras de adicionar áudio no HTML. Essa é uma delas. -->
+    <!-- <audio src="midia/onycs.mp3" controls autoplay></audio> -->
+    <!-- mp3, WAV, OGG - São os formatos que os navegadores aceitam. Porém evite, AO MÁXIMO, usar WAV, eles são arquivos muito grandes e pesados que vão afetar no desempenho do seu HTML. -->
+    <audio preload="metadata" autoplay controls loop>
+      <source src="midia/onycs.mp3" type="audio/mpeg" />
+      <source src="midia/onycs.ogg" type="audio/ogg" />
+      <source src="midia/onycs.wav" type="audio/wav" />
+      <p>
+        Infelizmente seu navegador não consegue reproduzir áudio.
+        <a href="midia/onycs.mp3">Clique aqui</a> para fazer o download do
+        arquivo.
+      </p>
+    </audio>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outas formatações</title>
+  </head>
+  <body>
+    <h1>Outras formatações</h1>
+    <h2>Código-Fonte/Pré-formatação</h2>
+    <!-- A tag code é para deixar as letras monoespaçadas, mais legíveis.-->
+    <p>
+      O comando <code>document.getElementById('Teste')</code> é escrito em
+      linguagem JavaScript.
+    </p>
+    <pre>
+    <code>
+num = int(input('Digite um número'))
+if num %2 == 0:
+    print(f'0 número
+{num} é PAR')
+else:
+    print(f'o número {num} é ÍMPAR')
+print('Fim do Programa')
+    </code>
+</pre>
+<h2>Citações</h2>
+<!-- Quando se trata de uma CITAÇÃO use a tag Q. Já em outras situações, pode-se, simplesmente, digitar as aspas.-->
+<p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q>.</p>
+<h2>Citações Completas</h2>
+<!-- A tag blockquote é usada para citações mais longas. Ele desloca e enfatisa a citação. -->
+<!-- A tag cite dentro de blockquote indica que a citação foi tirada de tal site, dando os direitos autorais ao próprio criador da citação. Não vai aparecer nenhum link para você clicar, apenas indicará aos mecanismos de busca que tal citação foi tirada de tal lugar. -->
+<p>Segundo Jeff Noble, no seu livro HTML para leigos: <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_e_CSS_Para_Leigos/E8ZtDwAAQBAJ?hl=pt-BR&gbpv=1&dq=HTML,XHTML&printsec=frontcover">A diferença entre elementos inline e um bloco de textos é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.</blockquote></p>
+<h2>Abreviações</h2>
+<!-- A tag abbr title possibilita mostrar o nome da sigla. Se você passar o cursor do mouse em cima da palavra HTML verá o que as siglas significam.-->
+<p>Estou estudando <abbr title="Hypertext Makup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> Estou adorando!</p>
+<h2>Texto Invertido</h2>
+<!-- A tag mais inútil dentro do HTML. Inverção de textos. -->
+<p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+  </body>
+</html>

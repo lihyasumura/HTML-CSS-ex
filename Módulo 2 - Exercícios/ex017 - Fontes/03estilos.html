@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fontes em CSS</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      body {
+        font-family: "Work Sans", Arial, Helvetica, sans-serif;
+
+        /* Medidas Absolutas:
+        cm, mm, in, px, pt, pc
+
+        Medidas Relativas:
+        em, ex, rem, Vw, vh, %
+
+        16px GERALMENTE É = 1em
+
+        A W3C recomenda usar o px ou o em no tamanho das fontes.
+        Gustavo Guanabara: USE SEMPRE O EM PORQUE VOCÊ TRABALHA COM A PORCENTAGEM DO TAMANHO DA FONTE PADRÃO. ISSO VAI SER BOM QUANDO VOCÊ MOSTRAR SEU SITE EM UMA TV, CELULAR, TABLET OU RELÓGIO.
+        */
+
+        font-size: 1em;
+        /* FONT-WEIGHT (PESO DA FONTE)= LIGHTER, NORMAL, BOLD, BOLDER
+        font-weight: normal;
+        font-style: italic;
+        text-decoration: underline;
+        */
+      }
+      h1 {
+        font: italic bolder 3em "Work Sans", sans-serif;
+      }
+      OU
+
+        /* font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: 3em;
+        font-style: italic; */
+      
+
+      /* SHORTHAND FONT - CONDENSAR TODAS AS CONFIGURAÇÕES DA FONTE
+      -fonte-style -> font-weight -> font-size -> font-family
+      */
+      h2 {
+        font: border 2em "Work Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iure omnis
+      asperiores distinctio expedita et sequi unde harum! Quisquam ea amet saepe
+      repudiandae ratione cupiditate cumque cum non expedita perferendis?Lorem
+      ipsum, dolor sit amet consectetur adipisicing elit. Ullam iste error
+      architecto ut ipsum distinctio, aut placeat velit eaque animi quasi
+      commodi odit soluta delectus atque, expedita sunt dolorem culpa? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Atque provident non
+      accusantium blanditiis? Temporibus ullam voluptatibus sint. Hic quibusdam
+      dolore soluta ullam consequuntur voluptatum vitae, fugiat asperiores,
+      nihil corrupti itaque!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+      repellendus unde consequatur atque, illum ipsa, perspiciatis dolorem est
+      ad cumque a minima commodi explicabo sint numquam eaque natus. Distinctio,
+      reiciendis.
+    </p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda
+      unde et quia alias earum saepe tempora laboriosam? Explicabo molestiae
+      distinctio quisquam, odio est ratione accusantium debitis officia
+      recusandae repellat?
+    </p>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listas</title>
+  </head>
+  <body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <!-- A tag OL significa Lista Ordenada.-->
+    <!-- com a tag type é possível escolher o tipo de númeração que irá aparecer. Números normais em ordem crescente, lista alfabética começado pela A (maiúscula ou minúscula) e lista com números romanos.-->
+    <!-- A tag start indica por qual número ou letra a lista deverá começar. -->
+    <ol type="I" start="1">
+      <!-- Dentro da tag OL usamos a tag LI (e seu fechamento é opcional). Com essa tag, mesmo que aparece um novo item, não precisaremos renumerar as ordens, ela é feita automaticamente. -->
+      <li>Acordar</li>
+      <li>Ligar para fulano</li>
+      <li>Tomar café</li>
+      <li>Escovar os dentes</li>
+      <li>Ir para a faculdade</li>
+      <li>Almoçar</li>
+      <li>Ir para o trabalho</li>
+      <li>Voltar para casa</li>
+      <li>Jantar</li>
+      <li>Dormir</li>
+    </ol>
+    <h2>Listas Não Ordenadas</h2>
+    <!-- Os tipos dessa lista são disc (bolinha preta), circle (bolinha aberta) e square (quadradinho).-->
+    <ul type="disc">
+      <li>Pão</li>
+      <li>Leite</li>
+      <li>Tomate</li>
+      <li>Alface</li>
+      <li>Manteiga</li>
+      <li>Arroz</li>
+      <li>Feijão</li>
+    </ul>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+      <li>Antigas</li>
+      <ol type="a">
+        <li>Clipp</li>
+        <li>Visual Basic</li>
+        <li>Fortran</li>
+        <li>Delphi</li>
+      </ol>
+      <li>Novas</li>
+      <!-- O start é um padrão numérico. Por mais que nossa lista seja de letras, o start sempre será um número, por isso que aqui ele vira 5 e começa na letra e.-->
+      <ol type="a" start="5">
+        <li>PHP</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Kotlin</li>
+      </ol>
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+      <li>NES</li>
+      <!-- Para mudar várias tags de uma vez, segure a tecla alt e clique nas tags que quer mudar. -->
+      <ul type="square">
+        <li>Mario Bros</li>
+        <ul type="circle">
+          <li>Mario Bros 3</li>
+          <li>Mario: Lost Levels</li>
+        </ul>
+        <li>Ninja Gaiden</li>
+      </ul>
+      <li>SNES</li>
+      <ul type="square">
+        <li>Mario</li>
+        <li>Donkey Kong</li>
+      </ul>
+      <li>PlayStation</li>
+      <ul type="square">
+        <li>Final Fantasy</li>
+        <li>CastleVania</li>
+      </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+    <dl>
+      <dt>HTML</dt>
+      <!-- DT = Tag de Termo -->
+      <!-- DD = Tag de definição -->
+      <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+      <dt>CSS</dt>
+      <dd>Linguagem de marcação para a criação do design de um site.</dd>
+      <dt>JavaScript</dt>
+      <dd>
+        Linguagem de programação para a criação de interatividade de um site.
+      </dd>
+    </dl>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+body {
+  background-color: #84e1acda;
+}
+header {
+  background-image: linear-gradient(#39ce7c, #1a5c38);
+  margin-top: -21px;
+  margin-right: -8px;
+  margin-left: -9px;
+}
+h1 {
+  color: white;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-weight: 400;
+}
+.tema {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+nav {
+  padding: 7px;
+}
+nav > a {
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding-left: 10px;
+  margin-left: 15px;
+}
+nav > a:hover {
+  
+  background-color: rgba(92, 156, 92, 0.678);
+  padding: 8px;
+  border-radius: 5px;
+}
+main {
+  background-color: white;
+  max-width: 800px;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
+}
+@font-face {
+  font-family: "idroid";
+  src: url(fontes/idroid.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+h2 {
+  font-family: "idroid", sans-serif;
+  margin-top: 0px;
+  padding: 20px 10px 0px 20px;
+  font-size: 1.8em;
+  color: #1a5c38;
+  text-align: left;
+}
+h3 {
+  background-image: linear-gradient(to left, white, #dff4e8, #c5ebd6);
+  font-family: "idroid", sans-serif;
+  font-size: 1.4em;
+  color: #1a5c38;
+  margin: 5px 10px 5px 10px;
+  padding: 0px 10px;
+  text-align: left;
+}
+p {
+  text-align: justify;
+  text-indent: 30px;
+  padding: 10px 17px;
+}
+div {
+  background-color: #1a5c38;
+  padding: 20px;
+  margin: 0px;
+}
+section {
+  text-align: justify;
+  margin: 15px;
+  background-color: #84e1acda;
+  border-radius: 10px;
+}
+section > h4 {
+  background-color: #39ce7c;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+ul {
+  list-style: none;
+}
+
+ul li:before {
+  content: "✓";
+  padding-right: 15px;
+}
+a {
+  background-color:#73dda2;
+  text-decoration: none;
+  color: #1a5c38;
+  font-weight: bold;
+}
+footer {
+  background-color: #1a5c38;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 5px 5px 5px 5px;
+  margin: -9px;
+}
+span {
+  color: #1a5c38;
+  font-weight: 600;
+}

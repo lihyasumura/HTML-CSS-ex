@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo de Caixas</title>
+    <style>
+      /* BOX-LEVEL */
+      h1 {
+        background-color: lightgray;
+
+        /* TAMANHO DA CAIXA*/
+
+        height: 300px;
+        width: 300px;
+
+        /*
+        border-width: 10px;
+        border-style: solid;
+        border-color: darkslategrey;
+        */
+
+        border: 10px solid darkslategrey;
+
+        /* A ORDEM É SEMPRE NO SENTIDO HORÁRIO!!!
+
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        */
+
+        padding: 10px; /* Se todas as medidas forem iguais, basta colocar uma vez que o programa já entende que essa medida vale para todos os lados. */
+
+        /*
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+        */
+
+        margin: 20px 20px 40px 20px;
+
+        /*
+        outline-width: 5px;
+        outline-style: dashed;
+        outline-color: rgb(59, 136, 59);
+        */
+
+        outline: 5px dashed rgb(59, 136, 59);
+      }
+      /* INLINE-LEVEL */
+      a {
+        /*
+        border-width: 10px;
+        border-style: solid;
+        border-color: red;
+        */
+
+        border: 10px solid red;
+
+        /*
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        */
+
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de Caixa Box-Level</h1>
+    <p>
+      Parágrafos também são exemplos de box-level, mas os
+      <a href="">links são exemplos de caixas inline-level</a>. Vamos ver como
+      tudo isso funciona?
+    </p>
+  </body>
+</html>

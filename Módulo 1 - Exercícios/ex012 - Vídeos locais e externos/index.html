@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vídeos com o HTML5</title>
+  </head>
+  <body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <!-- Sempre dispobilize o máximo de formatos possível. Nem todos usam o mesmo navegador e alguns formatos não são reconhecidos por alguns navegadores. -->
+    <!-- Diminua o tamanho em que o vídeo aparecerá na tela através do Width. -->
+    <!-- O parâmetro Poster é para você visualizar uma imagem antes do vídeo começar a rodar. -->
+    <!-- Nunca se esqueça do parâmetro CONTROLS, é através dele que a pessoa poderá dar o play. -->
+    <!-- ESSA MANEIRA DE HOSPEDAR VÍDEOS, PODE CUSTAR CARO PARA O SEU CLIENTE. SEMPRE O AVISE DISSO ANTES DE FECHAR CONTRATO. MESMO QUE O TAMANHO DO VÍDEO SEJA PEQUENO, SE MILHÕES DE PESSOAS ACESSAREM O SEU SITE E FIZEREM O DOWNLOAD DO VÍDEO, MAIS PESADO O SITE VAI FICAR, DEIXANDO A HOSPEDAGEM DO SITE MAIS CARA.-->
+    <video width="350" poster="imagens/pexels.png" controls autoplay loop>
+      <source src="midia/pexels02.webm" type="video/webm" />
+      <source src="midia/pexels01.mp4" type="video/mp4" />
+      <source src="midia/pexels03.ogv" type="video/ogv" />
+      <source src="midia/pexels.mp4" type="video/mp4" />
+      <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <!-- Fazendo da maneira abaixo os vídeos não consumiram dados do seu servidor e sim do YouTube. Escolha um vídeo no YouTube, clique em Compartilhar e depois em Incorporar, automaticamente ele criará o código e só você copiar e colar aqui. -->
+    <h1>Inserindo vídeos do YouTube.</h1>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/3hng-hmSv2Y"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>
