@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uso de iframe</title>
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-        iframe#tela {
-            width: 95vw;
-            height: 400px;
-            border: 2px solid black;
-        }
-
+      iframe#tela {
+        width: 95vw;
+        height: 400px;
+        border: 2px solid black;
+      }
     </style>
   </head>
   <body>
@@ -26,9 +25,21 @@
       fugiat, praesentium eligendi quas sunt laudantium pariatur quo maiores?
     </p>
     <ul>
-      <li><a href="paginas-extras/pagina001.html" target="frame">Primeira página</a></li>
-      <li><a href="paginas-extras/pagina002.html" target="frame">Segunda página</a></li>
-      <li><a href="paginas-extras/pagina003.html" target="frame">Terceira pagina</a></li>
+      <li>
+        <a href="paginas-extras/pagina001.html" target="frame"
+          >Primeira página</a
+        >
+      </li>
+      <li>
+        <a href="paginas-extras/pagina002.html" target="frame"
+          >Segunda página</a
+        >
+      </li>
+      <li>
+        <a href="paginas-extras/pagina003.html" target="frame"
+          >Terceira pagina</a
+        >
+      </li>
     </ul>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nostrum,
@@ -39,9 +50,16 @@
       eos molestias unde aspernatur temporibus eveniet, mollitia libero facere
       veniam! Commodi?
     </p>
-    <iframe id="tela" name="frame" src=""
-      >Infelizmente seu navegador não é compatível com isso!</iframe
-    >
+    <iframe
+      id="tela"
+      name="frame"
+      srcdoc=" <h1>Escolha uma das opções acima</h1> <p> Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Fugit expedita
+        eligendi quos corporis laudantium minus voluptatem eius? Eius distinctio
+        eos molestias unde aspernatur temporibus eveniet, mollitia libero facere
+        veniam! Commodi? </p> <img src='imagens/cursoemvideo.png'>">
+      <p>
+        Infelizmente seu navegador não é compatível com isso!</iframe>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio nulla
       nesciunt incidunt perspiciatis molestias illo, sunt, enim suscipit,
